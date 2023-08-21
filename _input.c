@@ -2,7 +2,7 @@
 
 static char *last_input;
 /**
- * get_input - Read the line of input from user.
+ * _input - Read the line of input from user.
  *
  * Return: Pointer to a buffer conatining the user's input.
 */

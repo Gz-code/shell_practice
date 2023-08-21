@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * get_path - Returns value of PATH env variable.
+ * _path - Returns value of PATH env variable.
  *
  * Return: Pointer to value of $PATH.
  */
