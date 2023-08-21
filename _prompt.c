@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * prompt - Print shell prompt to stdin stream.
+ * prompt function will Print shell prompt to stdin.
  *
- * Return: void.
+ * Return: Return type void.
  */
 void prompt(void)
 {

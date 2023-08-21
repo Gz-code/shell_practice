@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * free_error - frees alloc'd pointers following system error
- * @argv: pointer to a pointer to an array of pointers
- * @arg: pointer to a pointer to an array of characters
+ * free- frees allocated pointers tracing system error
+ * @argv: *ptr to *ptr to an array of pointers
+ * @arg: *ptr to a *ptr to an array of chars
  *
- * Return: void.
+ * Return: void
  */
 void free_error(char **argv, char *arg)
 {
@@ -19,8 +19,8 @@ void free_error(char **argv, char *arg)
 }
 
 /**
- * free_tokens - frees memory allocated dynamically by tokenize()
- * @ptr: pointer to allocated memory
+ * free_tokens function - frees dynamically allocated mem by tokenize()
+ * @ptr: pointer to allocated mem
  *
  * Return: void.
  */
@@ -35,10 +35,10 @@ void free_tokens(char **ptr)
 
 
 /**
- * free_path - Frees the global variable containing the PATH environment
+ * free_path function - Frees global variable holding the PATH env
  *              variable value
  *
- * Return: Nothing
+ * Return: NULL
  */
 void free_path(void)
 {

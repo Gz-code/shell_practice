@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * _puts - Prints a string to the standard output stream
- * @str: The string to print
+ * _puts function - Function prints a string to the stdout stream
+ * @str: string to print.
  *
  * Return: Void
  */
@@ -20,8 +20,8 @@ void _puts(char *str)
 }
 
 /**
- * _puterror - Prints an error message to the standard error stream
- * @err: The error message to print
+ * _puterror function - Function prints error message to the standard error stream (stderr)
+ * @err: The error message returned
  *
  * Return: Void
  */

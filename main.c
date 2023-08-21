@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * main - implements a simple shell
+ * main - The code executes a simple shell
  *
  * Return: EXIT_SUCCESS.
  */
@@ -11,14 +11,14 @@ int main(void)
 	char **args;
 	int status;
 
-	/* Register signal handlers */
+	/* Signal handlers */
 	signal(SIGINT, handle_sigint);
 	signal(SIGQUIT, handle_sigquit);
 	signal(SIGTSTP, handle_sigstp);
 
 	do {
 		input = get_input();
-		if (!input || !*input)/* EOF detected, exit the loop */
+		if (!input || !*input)/* If End of File (EOF) detected, exit the loop */
 			break;
 
 		args = tokenize_input(input);
@@ -32,7 +32,7 @@ int main(void)
 		free(input);
 		free_tokens(args);
 
-		/* Set status to 1 to continue the loop */
+		/* if status is set to 1 continue the loop */
 		status = 1;
 	} while (status);
 
