@@ -2,9 +2,9 @@
 
 static char *last_input;
 /**
- * _input - Read the line of input from user.
+ * _input - Read the user's line of input.
  *
- * Return: Pointer to a buffer conatining the user's input.
+ * Return: Ptr pointing to a buffer containing the input from the user.
 */
 char *get_input(void)
 {
@@ -13,13 +13,13 @@ char *get_input(void)
 	ssize_t nread;
 
 	do {
-		/* print shell prompt */
+		/* prints the shell prompt */
 		prompt();
 
-		/* get a line of input from user */
+		/* gets a line of user's input */
 		nread = getline(&input, &input_size, stdin);
 
-		/* check for EOF or error */
+		/* checks for errors/End Of File */
 		if (nread == -1)
 		{
 			free(input);
@@ -27,22 +27,22 @@ char *get_input(void)
 			return (NULL);
 		}
 
-		/* remove trailing newline character */
+		/* get rid of trailing newline char */
 		input[nread - 1] = '\0';
 
 	} while (input[0] == '\0' || isspace(input[0]));
 
-	/* update last_input to point to the new input */
+	/* updates the last_input so that it refers to the new input */
 	last_input = input;
 	return (input);
 }
 
 /**
- * free_last_input - Frees the most recent input entered by the user.
- *
- * This function frees the memory allocated for the most recent input string
- * entered by the user. It should be called after the input string is no longer
- * needed.
+ * free_last_input - Releases the user's most recent input.
+ * 
+ * The RAM alloted for the most recent input string entered by the user is
+ * released by this function. Once the input string is no longer required
+ * it should be called.
  */
 void free_last_input(void)
 {

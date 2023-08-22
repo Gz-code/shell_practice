@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * _line - Read input from the standard input.
+ * _line - Read code from the standard input.
  *
- * Return: The string enter by the user.
+ * Return: The string that the user entered.
 */
 void *get_line(void)
 {

@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * shell_exit - Exit the shell.
- * @args: Arguments.
+ * shell_exit - Makes an exit from the shell.
+ * @args: List of arguments.
  *
- * Return: Nothing.
+ * Return: 0 (success).
  */
 void shell_exit(char **args)
 {
