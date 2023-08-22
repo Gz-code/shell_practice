@@ -4,7 +4,7 @@ static char *last_input;
 /**
  * _input - Read the user's line of input.
  *
- * Return: Ptr pointing to a buffer containing the input from the user.
+ * Return: *Ptr pointing to a buffer containing the input from the user.
 */
 char *get_input(void)
 {
